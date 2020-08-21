@@ -1,9 +1,0 @@
-#poop {
-    font-family: 'Recursive' !important;
-    --mono: "MONO" 1 !important;
-    --casl: "CASL" 0 !important;
-    --wght: "wght" 800 !important;
-    --slnt: "slnt" 0 !important;
-    --CRSV: "CRSV" 0.5 !important;
-    font-variation-settings: var(--mono), var(--casl), var(--wght), var(--slnt), var(--CRSV) !important; 
-}
