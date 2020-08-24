@@ -1,0 +1,19 @@
+{
+  "name": "kil0bite.github.io",
+  "version": "1.0.0",
+  "description": "## Don't worry, I don't know what I'm doing.",
+  "main": " ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kil0bite/kil0bite.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kil0bite/kil0bite.github.io/issues"
+  },
+  "homepage": "https://github.com/kil0bite/kil0bite.github.io#readme"
+}
