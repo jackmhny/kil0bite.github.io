@@ -13,10 +13,7 @@
   <!-- concrete css-->
   <!-- i found some random almost classless css purely to spite bootstrap. I will likely replace this in the future -->
   <link rel="stylesheet" href="https://unpkg.com/normalize.css">
-  <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura-dark.css" type="text/css">
-
-
-  
+  <link id="sakura-link" rel="stylesheet" href="sakura/sakura-poop.css">
 
   <!-- Add icon library -->
   <script src="https://kit.fontawesome.com/70211a4223.js"></script>
@@ -27,17 +24,27 @@
   <!-- using the cool font -->
   <style>
     *{
-      font-family: 'Recursive';
+      font-family: 'Recursive'!;
     }
+    .float-right{
+      float:right;
     }
   </style>
 </head>
 
 <body>
+
+
   <main>
-    <section class="hero container center text-center">
+    <section class="container">
       <div>
-          <h1>kil0</h1>
+          <h1 style="display: inline;">kil0</h1>
+          <span class="float-right" id="switch-container">
+            <span id="switch">
+              Current theme: <span id="currentTheme">sakura-poop</span>
+              <button id="switchThemeButton" onclick="switchSakuraTheme();">Switch Theme</button>
+            </span>
+          </span>
           <h4>Some person on the internet</h4>
         <hr>
       </div>
@@ -64,5 +71,76 @@
 
   </main>
 </body>
+<script charset="utf-8">
+  var themes = [
+    {
+      name: "sakura-poop",
+      href: "sakura-poop.css"
+    },
+    {
+      name: "sakura-lightpoop",
+      href: "sakura-lightpoop.css",
+    },
+    {
+      name: "sakura-css",
+      href: "sakura.css",
+    },
+    {
+      name: "sakura-dark",
+      href: "sakura-dark.css"
+    },
+  ];
 
+    // OLD LIST
+    // {
+    //   name: "Sakura (default)",
+    //   href: "sakura.css",
+    // },
+    // {
+    //   name: "sakura-earthly",
+    //   href: "sakura-earthly.css",
+    // },
+    // {
+    //   name: "sakura-vader",
+    //   href: "sakura-vader.css",
+    // },
+    // {
+    //   name: "sakura-dark",
+    //   href: "sakura-dark.css"
+    // },
+    // {
+    //   name: "sakura-dark-solarized",
+    //   href: "sakura-dark-solarized.css"
+    // },
+    // {
+    //   name: "sakura-ink",
+    //   href: "sakura-ink.css"
+    // },
+    // {
+    //   name: "sakura-poop",
+    //   href: "sakura-poop.css"
+    // },
+
+
+  var current = 0;
+  var sakura = document.getElementById("sakura-link");
+  sakura.disabled = false;
+  function toggleSakura() {
+    if (sakura.disabled === true) {
+      sakura.disabled = false
+      switchTag.style.display = 'block';
+    } else {
+      sakura.disabled = true
+      switchTag.style.display = 'none';
+    }
+  }
+
+  var switchTag = document.getElementById("switch");
+  var currentThemeTag = document.getElementById("currentTheme");
+  function switchSakuraTheme() {
+    sakura.href = 'sakura/' + themes[(current + 1)% themes.length].href;
+    currentThemeTag.innerHTML = themes[(current + 1)% themes.length].name;
+    current += 1
+  }
+  </script>
 </html>
