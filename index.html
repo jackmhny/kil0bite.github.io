@@ -13,7 +13,7 @@
   <!-- concrete css-->
   <!-- i found some random almost classless css purely to spite bootstrap. I will likely replace this in the future -->
   <link rel="stylesheet" href="https://unpkg.com/normalize.css">
-  <link id="sakura-link" rel="stylesheet" href="sakura/sakura-poop.css">
+  <link id="sakura-link" rel="stylesheet" href="css/sakura-poop.css">
 
   <!-- Add icon library -->
   <script src="https://kit.fontawesome.com/70211a4223.js"></script>
@@ -41,7 +41,7 @@
           <h1 style="display: inline;">kil0</h1>
           <span class="float-right" id="switch-container">
             <span id="switch">
-              Current theme: <span id="currentTheme">sakura-poop</span>
+              Current theme: <span id="currentTheme">poop</span>
               <button id="switchThemeButton" onclick="switchSakuraTheme();">Switch Theme</button>
             </span>
           </span>
@@ -74,25 +74,17 @@
 <script charset="utf-8">
   var themes = [
     {
-      name: "sakura-poop",
+      name: "CoolKidTheme",
       href: "sakura-poop.css"
     },
     {
-      name: "sakura-poop-hicontrast",
+      name: "HiContrastCoolKidTheme",
       href: "sakura-poop-hicontrast.css"
     },
     {
-      name: "sakura-lightpoop",
+      name: "LightCoolKidTheme",
       href: "sakura-lightpoop.css",
-    },
-    {
-      name: "sakura-css",
-      href: "sakura.css",
-    },
-    {
-      name: "sakura-dark",
-      href: "sakura-dark.css"
-    },
+    }
   ];
 
     // OLD LIST
@@ -142,7 +134,7 @@
   var switchTag = document.getElementById("switch");
   var currentThemeTag = document.getElementById("currentTheme");
   function switchSakuraTheme() {
-    sakura.href = 'sakura/' + themes[(current + 1)% themes.length].href;
+    sakura.href = 'css/' + themes[(current + 1)% themes.length].href;
     currentThemeTag.innerHTML = themes[(current + 1)% themes.length].name;
     current += 1
   }
