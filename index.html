@@ -19,15 +19,13 @@
   <!-- Add icon library -->
   <script src="https://kit.fontawesome.com/70211a4223.js"></script>
 
-  <!-- cool font -->
-  <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
 
-  <!-- using the cool font -->
-  <style>
-    *{
-      font-family: 'Recursive'!;
+  <script>
+    function resizeIframe(obj) {
+      obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
     }
-  </style>
+  </script>
 </head>
 
 <body>
@@ -130,7 +128,7 @@
             </a>
           </div>
           <div class="column">
-            <a class="box social" href="https://www.youtube.com/watch?v=8ybW48rKBME&wadsworth=1" target="_blank">
+            <a class="box social" href="https://medal.tv/users/9276883" target="_blank">
               <div class="title is-2">
                 <p class="title is-inline">Medal </p>
                 <i class="fas fa-medal is-pulled-right"></i>
@@ -143,26 +141,30 @@
     </section>
     <hr>
     <section class="content tiles">
-      <div class="container">
-        <div class="columns">
-          <div class="column">
-            <h1>Some epic gaming clips (<i class="fas fa-medal"></i>)</h1>
+      <details>
+        <summary class="container box has-background-success-light"> 
+          <h1 class="is-inline">Some epic gaming clips (<i class="fas fa-medal"></i>)</h1>
+          <p class="subtitle is-pulled-right">(Click to Show)</p>
+        </summary>
+        <div class="container">
+          <div class="columns is-multiline is-mobile">
+            <div class="column my-2 is-full">
+              <figure class="image is-16by9">
+                <iframe class="has-ratio" src="https://medal.tv/clip/31738743/vpgle6jDp" frameborder="0" allowfullscreen></iframe>
+              </figure>
+            </div>
+            <div class="column my-2 is-full">
+              <figure class="image is-16by9">
+                <iframe class="has-ratio" src="https://medal.tv/clip/31210637/vpqcL1zGR" frameborder="0" allowfullscreen></iframe>
+              </figure>
+            </div>
+            <div class="column my-2 is-full">
+              <figure class="image is-16by9">
+                <iframe class="has-ratio" src="https://medal.tv/clip/31206525/vpX4gC8AZ" frameborder="0" allowfullscreen></iframe>
+              </figure>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="columns is-multiline is-mobile">
-          <div class="column is-narrow my-2">
-            <iframe class="has-ratio" style="border: none;" src="https://medal.tv/clip/31738743/vpSoaIqGX"  allowfullscreen></iframe>
-          </div>
-          <div class="column is-narrow my-2">
-            <iframe class="has-ratio"   style="border: none;" src="https://medal.tv/clip/31210637/vpbbbXuv1"  allowfullscreen></iframe>
-          </div>
-          <div class="column is-narrow my-2">
-            <iframe class="has-ratio"   style="border: none;" src="https://medal.tv/clip/31206525/vpeYgBuJK"  allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
+      </details>
     </section>
   </main>
 </body>
