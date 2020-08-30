@@ -10,10 +10,11 @@
 
   <title>Kil0</title>
 
-  <!-- concrete css-->
-  <!-- i found some random almost classless css purely to spite bootstrap. I will likely replace this in the future -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css"/>
+
+   <!--  sakura 
   <link rel="stylesheet" href="https://unpkg.com/normalize.css">
-  <link id="sakura-link" rel="stylesheet" href="css/sakura-poop.css">
+  <link id="sakura-link" rel="stylesheet" href="css/sakura-poop.css"> -->
 
   <!-- Add icon library -->
   <script src="https://kit.fontawesome.com/70211a4223.js"></script>
@@ -26,9 +27,6 @@
     *{
       font-family: 'Recursive'!;
     }
-    .float-right{
-      float:right;
-    }
   </style>
 </head>
 
@@ -36,107 +34,135 @@
 
 
   <main>
-    <section class="container">
-      <div>
-          <h1 style="display: inline;">kil0</h1>
-          <span class="float-right" id="switch-container">
-            <span id="switch">
-              Current theme: <span id="currentTheme">CoolKidTheme</span>
-              <button id="switchThemeButton" onclick="switchSakuraTheme();">Switch Theme</button>
-            </span>
-          </span>
-          <h4>Some person on the internet</h4>
-        <hr>
+    
+    <section class="hero is-medium is-fullheight-with-navbar">
+      <div class="hero-head">
+        <div class="container">
+          <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div id="navbarBasicExample" class="navbar-menu">
+              <div class="navbar-start">
+                <a class="navbar-item is-active" href="#">
+                  Kil0
+                </a>
+              </div>
+  
+              <div class="navbar-end">
+                <div class="navbar-item">
+                  <a class="ml-4 has-text-black-bis" href="https://www.youtube.com/channel/UCVpsAa01NTJ5V54o8CmfSmA">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                  <a class="ml-4 has-text-black-bis" href="https://github.com/kil0bite">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a class="ml-4 has-text-black-bis" href="https://www.youtube.com/watch?v=8ybW48rKBME&wadsworth=1">
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            Hi, I'm kil0
+          </h1>
+          <h3 class="subtitle">I do stuff on the internet</h3>
+        </div>
       </div>
     </section>
-    <div class="container">
-      <h2>Where you can find me</h2>
-        <button href="https://www.youtube.com/channel/UCVpsAa01NTJ5V54o8CmfSmA">Youtube
-          <i class="fab fa-youtube"></i>
-        </button>
-        <button href="https://github.com/kil0bite">Github
-          <i class="fab fa-github"></i>
-        </button>
-        <button href="https://www.youtube.com/watch?v=8ybW48rKBME&wadsworth=1">Email
-          <i class="fas fa-envelope"></i>
-        </button>
-      <hr>
-    </div>
-
-    <div class="container">
-      <h2>What happened to the old site?</h2>
-      <p>I was sick of bootstrap and npm and other crap so I decided to make a more lightweight site and here it is!</p>
-      <hr>
-    </div>
-
+<br>
+<br>
+<br>
+    <!-- <section class="container">
+      <div class="columns">
+        <div class="column is-10 is-offset-1">
+          <div class="columns">
+            <div class="column is-7">
+              <img src="https://wallpapercave.com/wp/tmi0PtK.jpg" alt="">
+            </div>
+            <div class="column is-5">
+              <div>
+                <h1 class="title">Welcome to my cool site</h1>
+                <p>Fun fact! I stole that image to the left of this.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <section class="content tiles">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <h1>Buttons that take you to websites</h1>
+          </div>
+        </div>
+      </div>
+      <div class="container is-centered is-mobile">
+        <div class="columns">
+          <div class="column">
+            <a class="box social" href="https://www.youtube.com/channel/UCVpsAa01NTJ5V54o8CmfSmA" target="_blank">
+              <div class="title is-2">
+                <p class="title is-inline">Youtube </p>
+                <i class="fab fa-youtube is-pulled-right"></i>
+              </div>
+              <p class="subtitle is-4 is-marginless">videos</p>
+            </a>
+          </div>
+          <div class="column">
+            <a class="box social" href="https://github.com/kil0bite" target="_blank">
+              <div class="title is-2">
+                <p class="title is-inline">Github </p>
+                <i class="fab fa-github is-pulled-right"></i>
+              </div>
+              <p class="subtitle is-4 is-marginless">probably code</p>
+            </a>
+          </div>
+          <div class="column">
+            <a class="box social" href="https://www.youtube.com/watch?v=8ybW48rKBME&wadsworth=1" target="_blank">
+              <div class="title is-2">
+                <p class="title is-inline">Email </p>
+                <i class="fas fa-envelope is-pulled-right"></i>
+              </div>
+              <p class="subtitle is-4 is-marginless">the new snail mail</p>
+            </a>
+          </div>
+          <div class="column">
+            <a class="box social" href="https://www.youtube.com/watch?v=8ybW48rKBME&wadsworth=1" target="_blank">
+              <div class="title is-2">
+                <p class="title is-inline">Medal </p>
+                <i class="fas fa-medal is-pulled-right"></i>
+              </div>
+              <p class="subtitle is-4 is-marginless">gaming clips</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section class="content tiles">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <h1>Some epic gaming clips (<i class="fas fa-medal"></i>)</h1>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="columns">
+          <div class="column is-narrow">
+            <a class="box" href="#"><iframe width="640" height="360" style="border: none;" src="https://medal.tv/clip/31738743/vpSoaIqGX" allow="autoplay" allowfullscreen></iframe></a>
+          </div>
+          <a class="box" href="#"><iframe width="640" height="360" style="border: none;" src="https://medal.tv/clip/31738743/vpSoaIqGX" allow="autoplay" allowfullscreen></iframe></a>
+        </div>
+          <div class="column is-narrow">
+            <a class="box" href="#">pee</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 </body>
-<script charset="utf-8">
-  var themes = [
-    {
-      name: "CoolKidTheme",
-      href: "sakura-poop.css"
-    },
-    {
-      name: "HiContrastCoolKidTheme",
-      href: "sakura-poop-hicontrast.css"
-    },
-    {
-      name: "LightCoolKidTheme",
-      href: "sakura-lightpoop.css",
-    }
-  ];
-
-    // OLD LIST
-    // {
-    //   name: "Sakura (default)",
-    //   href: "sakura.css",
-    // },
-    // {
-    //   name: "sakura-earthly",
-    //   href: "sakura-earthly.css",
-    // },
-    // {
-    //   name: "sakura-vader",
-    //   href: "sakura-vader.css",
-    // },
-    // {
-    //   name: "sakura-dark",
-    //   href: "sakura-dark.css"
-    // },
-    // {
-    //   name: "sakura-dark-solarized",
-    //   href: "sakura-dark-solarized.css"
-    // },
-    // {
-    //   name: "sakura-ink",
-    //   href: "sakura-ink.css"
-    // },
-    // {
-    //   name: "sakura-poop",
-    //   href: "sakura-poop.css"
-    // },
-
-
-  var current = 0;
-  var sakura = document.getElementById("sakura-link");
-  sakura.disabled = false;
-  function toggleSakura() {
-    if (sakura.disabled === true) {
-      sakura.disabled = false
-      switchTag.style.display = 'block';
-    } else {
-      sakura.disabled = true
-      switchTag.style.display = 'none';
-    }
-  }
-
-  var switchTag = document.getElementById("switch");
-  var currentThemeTag = document.getElementById("currentTheme");
-  function switchSakuraTheme() {
-    sakura.href = 'css/' + themes[(current + 1)% themes.length].href;
-    currentThemeTag.innerHTML = themes[(current + 1)% themes.length].name;
-    current += 1
-  }
-  </script>
 </html>
