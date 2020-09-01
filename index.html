@@ -10,6 +10,7 @@
 
   <title>Kil0</title>
 
+  <!-- bulma css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css"/>
 
    <!--  sakura 
@@ -19,13 +20,13 @@
   <!-- Add icon library -->
   <script src="https://kit.fontawesome.com/70211a4223.js"></script>
 
-  <link rel="stylesheet" href="css/main.css">
 
-  <script>
-    function resizeIframe(obj) {
-      obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
-    }
-  </script>
+  <!-- hide little arrow on <details> thing -->
+  <style>
+    details summary::-webkit-details-marker {
+    display:none;
+  }
+  </style>
 </head>
 
 <body>
@@ -34,7 +35,7 @@
   <main>
     
     <section class="hero is-medium is-fullheight-with-navbar">
-      <div class="hero-head">
+      <div class="hero-head"> <!-- Navbar -->
         <div class="container">
           <nav class="navbar" role="navigation" aria-label="main navigation">
             <div id="navbarBasicExample" class="navbar-menu">
@@ -72,37 +73,20 @@
             </div>
           </nav>
         </div>
-      </div>
-      <div class="hero-body">
+      </div> <!-- /Navbar-->
+      <div class="hero-body"> <!-- Cover--> 
         <div class="container has-text-centered">
           <h1 class="title">
             Hi, I'm kil0
           </h1>
           <h3 class="subtitle">I do stuff on the internet</h3>
         </div>
-      </div>
+      </div> <!-- /Cover -->
     </section>
-<br>
-<br>
-<br>
-    <!-- <section class="container">
-      <div class="columns">
-        <div class="column is-10 is-offset-1">
-          <div class="columns">
-            <div class="column is-7">
-              <img src="https://wallpapercave.com/wp/tmi0PtK.jpg" alt="">
-            </div>
-            <div class="column is-5">
-              <div>
-                <h1 class="title">Welcome to my cool site</h1>
-                <p>Fun fact! I stole that image to the left of this.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <section id="socials" class="content tiles">
+    <br>
+    <br>
+    <br> 
+    <section id="socials" class="content tiles"> <!-- Socials -->
       <div class="container">
         <div class="columns">
           <div class="column is-10 is-offset-1">
@@ -181,9 +165,9 @@
           </div>
         </div>
       </div>
-    </section>
-    <hr>
-    <section id="clips" class="content tiles">
+    </section> <!-- /Socials  -->
+      <hr>
+    <section id="clips" class="content tiles">  <!-- Clips -->
       <details>
         <summary class="container box has-background-success-light"> 
           <h1 class="title is-inline">Some epic gaming clips (<i class="fas fa-medal"></i>)</h1>
@@ -215,7 +199,7 @@
           </div>
         </div>
       </details>
-    </section>
+    </section> <!-- /Clips  -->
   </main>
 </body>
 </html>
